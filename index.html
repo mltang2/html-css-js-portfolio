@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Michael Tang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></lia>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Michael Tang</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></lia>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile"> 
+        <div class="section_pic-container">
+            <img src="./assets/profilepic.png" alt="Michael Tang profile picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I am</p>
+            <h1 class="title">Michael Tang</h1>
+            <p class="section_text_p2">Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/resume-example.pdf')"
+                >Download Resume
+                </button>
+                <button class="btn btn-color-1" 
+                onclick="location.href='./#contact'"
+                >Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile"
+                class="icon" onclick="location.href='https:/linkedin.com/in/michael-tang-76bab729a/'">
+                <img src="./assets/github.png" alt="My Github profile"
+                class="icon" onclick="location.href='https:/github.com/mltang2'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section_pic-container">
+            <img
+              src="./assets/personpic.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>University of Wisconsin-Madison <br />B.S. Computer Science <br />B.S. Data Science</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/primaryinterest2.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Primary Interests</h3>
+                <p>Object Oriented Programming<br />Data Structures and Algorithms <br />Large Language Models</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                I am currently a sophomore at the University of Wisconsin-Madison, pursuing a degree in computer science as well as data science. My passions lie in object oriented programming and exploring data structures and algorithms. Similar to putting pieces of a puzzle together, I found that OOP gave me the ability to model real world problems in an intuitive and structured way. Through classes and objects, complex systems were able to be broken down into more simpler ones. DSA fascinates me in much the same way that OOP does. By understanding how to manipulate and optimize data efficiently, there can always be a goal of having code run faster whilst taking up less resources. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Research Assistant - Dr. George Thomas</h2>
+                    <div class="article-container">
+                        <article>
+                            <div>
+                                <h3>[Python, Java, Git, Ollama, Docker, HuggingFace]</h3>
+                                <img src="./assets/uwo.png" alt="UWO icon" class="icon" />
+                                <ul>
+                                    <li>Assessed and integrated 5 different open source large language models into applications that were able to access the interface programmatically.</li>
+                                    <li>Provided new data and fine-tuned the large language models response taking no longer than 30 minutes through a cloud interface. All while being mindful of hardware, memory, space, and other potential constraints.</li>
+                                    <li>Worked with 1 other assistant to develop a survey paper on how to choose 1 from several large language models offered by Ollama, fine tune it, and deploy to a specific use case.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Machine Learning for Engineering Research</h2>
+                    <div class="article-container">
+                        <article>
+                            <h3>[Python, SQL, Sckit-Learn, MAST-ML]</h3>
+                            <img src="./assets/uwmadison.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <ul>
+                                    <li>Engaged in project-based research with the Informatics Skunkworks program that involved science and engineering aspects, honing in on machine learning specifically.</li>
+                                    <li>Collaborated with a diverse group of peers and mentors to work on delivering concise research projects that stemmed from an implementation of applied data science techniques.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="experience-arrow"
+    onclick="location.href='./#projects'"
+/>
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/tictactoe.png"
+                    alt="Project 1"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Tic Tac Toe Game</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.
+                    href='https://github.com/mltang2/TicTacToeGame'">
+                    Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/personalweb.png"
+                    alt="Project 2"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Personal Website</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.
+                    href='https://github.com/mltang2/html-css-js-portfolio'">
+                    Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/question.png"
+                    alt="Project 3"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Coming Soon...</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.
+                    href='https://github.com'">
+                    Github
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt="Arrow Icon"
+            class="icon arrow"
+            onclick="location.href='./#contact'"
+            />
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="experience-details-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:mltang2@wisc.edu">mltang2@wisc.edu</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"
+                />
+                <p><a href="https:/linkedin.com/in/michael-tang-76bab729a/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></lia>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Michael Tang. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
